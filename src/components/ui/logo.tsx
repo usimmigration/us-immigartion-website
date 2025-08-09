@@ -3,7 +3,7 @@ export function Logo({
 	variant = 'blue',
 }: {
 	className?: string
-	variant: 'blue' | 'white'
+	variant?: 'blue' | 'white'
 }) {
 	return (
 		<svg
