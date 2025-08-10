@@ -3,6 +3,14 @@ import { PrismaClient, PAYMENT_STATUS } from '@prisma/client'
 import { z } from 'zod'
 import { stripe } from '@/lib/stripe'
 
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '50mb'
+    },
+  },
+}
+
 const prisma = new PrismaClient()
 
 const applicationSchema = z.object({
