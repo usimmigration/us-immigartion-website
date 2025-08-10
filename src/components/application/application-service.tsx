@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function ApplicationService({ t }: { t: any }) {
 	return (
 		<section className='mb-16 bg-white rounded-lg shadow-md p-8'>
@@ -11,9 +13,11 @@ export function ApplicationService({ t }: { t: any }) {
 					<li key={i}>{item}</li>
 				))}
 			</ul>
-			<button className='bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded shadow transition'>
-				{t.startApplication}
-			</button>
+			<Link href='#form' className='contents'>
+				<button className='bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded shadow transition cursor-pointer'>
+					{t.startApplication}
+				</button>
+			</Link>
 		</section>
 	)
 }

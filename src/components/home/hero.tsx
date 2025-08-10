@@ -30,7 +30,7 @@ export function Hero() {
 				</p>
 				<Link
 					href='/application'
-					className='inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-full shadow-lg transition'
+					className='inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-full shadow-lg transition mt-4'
 				>
 					Apply<span className='hidden md:inline'>with Expert Help</span>
 					<ChevronRightIcon color='white' />

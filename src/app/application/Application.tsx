@@ -12,12 +12,9 @@ import {
 	ApplicationInformation,
 	ApplicationAccreditation,
 } from '@/components/application'
+import { ApplicationForm } from '@/components/application/application-form'
 
-export function Application({
-	langFromQuery,
-}: {
-	langFromQuery: string
-}) {
+export function Application({ langFromQuery }: { langFromQuery: string }) {
 	const router = useRouter()
 
 	const [lang, setLang] = useState('en')
@@ -41,6 +38,7 @@ export function Application({
 		<main className='min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-900 font-sans p-6 max-w-7xl mx-auto'>
 			<LanguageSelector lang={lang} setLang={setLang} />
 
+			<ApplicationForm t={t} />
 			<ApplicationHero t={t} />
 			<ApplicationTrust t={t} />
 			<ApplicationService t={t} />

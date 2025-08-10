@@ -68,7 +68,6 @@ export function Header() {
 						<Container className='w-full'>
 							<HeaderNav className='[&_ul]:flex-col' />
 						</Container>
-						<hr className='mt-4 border-[#1A396F] opacity-50' />
 					</div>
 				)}
 			</Container>

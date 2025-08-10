@@ -1,5 +1,11 @@
 export const TRANSLATIONS = {
 	en: {
+		form: {
+			title: 'Start ESTA Application',
+			passportCountryLabel: 'Which country is issued your passport?',
+			passportCountryPlaceholder: 'Germany',
+			nextButton: 'Next',
+		},
 		statsTitle: 'Fast and Secure visa application support.',
 		stats: [
 			{ value: '98%', label: 'Approval Rate' },
@@ -90,6 +96,12 @@ export const TRANSLATIONS = {
 	},
 
 	es: {
+		form: {
+			title: 'Iniciar solicitud ESTA',
+			passportCountryLabel: '¿En qué país se emitió su pasaporte?',
+			passportCountryPlaceholder: 'Alemania',
+			nextButton: 'Siguiente',
+		},
 		statsTitle: 'Soporte rápido y seguro para la solicitud de visa.',
 		stats: [
 			{ value: '98%', label: 'Tasa de Aprobación' },
@@ -182,6 +194,12 @@ export const TRANSLATIONS = {
 	},
 
 	de: {
+		form: {
+			title: 'Starten Sie den ESTA-Antrag',
+			passportCountryLabel: 'In welchem Land wurde Ihr Reisepass ausgestellt?',
+			passportCountryPlaceholder: 'Deutschland',
+			nextButton: 'Weiter',
+		},
 		statsTitle:
 			'Schnelle und sichere Unterstützung bei der Visumantragstellung.',
 		stats: [
@@ -273,6 +291,13 @@ export const TRANSLATIONS = {
 	},
 
 	fr: {
+		form: {
+			title: 'Commencer la demande ESTA',
+			passportCountryLabel:
+				'Dans quel pays votre passeport a-t-il été délivré ?',
+			passportCountryPlaceholder: 'Allemagne',
+			nextButton: 'Suivant',
+		},
 		statsTitle: 'Support rapide et sécurisé pour la demande de visa.',
 		stats: [
 			{ value: '98%', label: "Taux d'approbation" },
@@ -365,6 +390,12 @@ export const TRANSLATIONS = {
 	},
 
 	it: {
+		form: {
+			title: 'Inizia la domanda ESTA',
+			passportCountryLabel: 'In quale paese è stato emesso il tuo passaporto?',
+			passportCountryPlaceholder: 'Germania',
+			nextButton: 'Avanti',
+		},
 		statsTitle: 'Supporto rapido e sicuro per la domanda di visto.',
 		stats: [
 			{ value: '98%', label: 'Tasso di approvazione' },
