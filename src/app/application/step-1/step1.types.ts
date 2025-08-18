@@ -29,7 +29,6 @@ export type Form = {
 	citizenshipCountry: string;
 	gender: 'Male' | 'Female' | 'Other';
 	passportFile: FileList;
-	passportFileBase64: string | null;
 	otherCitizenship: 'Yes' | 'No';
 	otherPassportIssued: 'Yes' | 'No';
 	homeCountry: string;

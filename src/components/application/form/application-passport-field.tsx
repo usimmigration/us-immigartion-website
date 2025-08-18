@@ -17,22 +17,7 @@ interface Props {
 export const ApplicationPassportField = ({
 	register,
 	errors,
-	setValue,
 }: Props) => {
-	const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const file = e.target.files?.[0]
-		if (!file) return
-
-		const reader = new FileReader()
-		reader.onloadend = () => {
-			const base64 = reader.result as string
-			setValue('passportFileBase64', base64, {
-				shouldValidate: true,
-				shouldDirty: true,
-			})
-		}
-		reader.readAsDataURL(file)
-	}
 	return (
 		<section>
 			<h2>Passport Details</h2>
@@ -196,7 +181,6 @@ export const ApplicationPassportField = ({
 									: 'File is required',
 						},
 					})}
-					onChange={handleFileChange}
 				/>
 			</label>
 			{errors.passportFile && (

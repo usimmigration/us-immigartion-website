@@ -5,11 +5,7 @@ import { toast } from 'sonner'
 
 export function useApply() {
 	return useMutation({
-		mutationFn: (
-			body: Omit<Omit<Form, 'passportFileBase64'>, 'passportFile'> & {
-				passportFile: string | null
-			}
-		) => applicationService.apply(body),
+		mutationFn: (body: Form) => applicationService.apply(body),
 		onError: (err: any) => {
 			toast.error(`Failed to apply: ${err.response.data.error.message}`)
 			console.log(err)
