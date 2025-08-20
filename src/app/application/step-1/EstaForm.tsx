@@ -11,7 +11,7 @@ import {
 import { useApply } from '@/hooks/useApplication'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import './step1.styles.css'
+import styles from './step1.module.css'
 import { type Form } from './step1.types'
 
 export default function EstaForm() {
@@ -100,7 +100,11 @@ export default function EstaForm() {
 	const email = watch('email')
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} noValidate>
+		<form
+			onSubmit={handleSubmit(onSubmit)}
+			noValidate
+			className={styles.step1Form}
+		>
 			<ApplicationContactField
 				register={register}
 				errors={errors}
@@ -118,7 +122,7 @@ export default function EstaForm() {
 			<button
 				type='submit'
 				disabled={isPending}
-				className='disabled:opacity-50 disabled:cursor-not-allowed'
+				className={`submit-button disabled:opacity-50 disabled:cursor-not-allowed`}
 			>
 				Submit ESTA Application
 			</button>

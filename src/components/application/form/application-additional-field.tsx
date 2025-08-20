@@ -51,7 +51,7 @@ export const ApplicationAdditionalField = ({ register, errors }: Props) => {
 
 			<h2>Mandatory Questions</h2>
 			{Object.entries(mandatoryQuestions).map(([key, q]) => (
-				<label key={key}>
+				<label key={key} className='mandatory-question'>
 					{key.toUpperCase()}) {q} *
 					<select
 						{...register(`question${key.toUpperCase()}` as any, {

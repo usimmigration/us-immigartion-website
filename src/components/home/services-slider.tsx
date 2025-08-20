@@ -21,21 +21,12 @@ export function ServicesSlider() {
             gap-8
             flex flex-col
 						md:grid
-            md:grid-cols-[repeat(2,_minmax(0,_1fr))]
-            md:grid-rows-[auto_auto]
-            md:grid-flow-col
+            md:grid-cols-2
           '
-					style={{
-						gridTemplateAreas: `
-              "block1 block2"
-              "block3 block3"
-            `,
-					}}
 				>
 					{/* ESTA */}
 					<div
 						className='bg-blue-50 p-6 rounded-lg shadow-md h-full flex flex-col justify-between'
-						style={{ gridArea: 'block1' }}
 					>
 						<img src='/flag-us.svg' alt='Flag US' className='h-10 mb-4' />
 						<h3 className='text-xl font-semibold text-blue-900 mb-2'>
@@ -59,31 +50,9 @@ export function ServicesSlider() {
 						</div>
 					</div>
 
-					{/* Tourist Visa */}
-					<div
-						className='bg-blue-50 p-6 rounded-lg shadow-md h-full flex flex-col justify-between'
-						style={{ gridArea: 'block2' }}
-					>
-						<h3 className='text-xl font-semibold text-blue-900 mb-2'>
-							Don’t Qualify for ESTA?
-							<br /> Tourist Visa (B2)
-						</h3>
-						<p className='text-gray-700 mb-4'>
-							The B2 Visitor Visa is for travelers not eligible for ESTA. It
-							requires an interview, wait time, and more documentation.
-						</p>
-						<Link
-							href='/b2-visa/'
-							className='mt-auto inline-block px-6 py-3 bg-blue-700 text-white rounded-full font-medium hover:bg-blue-800 transition'
-						>
-							B2 Tourist Visa
-						</Link>
-					</div>
-
 					{/* Visa Renewal */}
 					<div
 						className='bg-blue-50 p-6 rounded-lg shadow-md h-full flex flex-col justify-between'
-						style={{ gridArea: 'block3' }}
 					>
 						<h3 className='text-xl font-semibold text-blue-900 mb-2'>
 							What if I had a visa before?
